@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WorldScanner</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Resim Yükleme Kutusu -->
+    <div class="upload-box">
+      <h2>Resim Yükleyin</h2>
+      <input type="file" id="image-upload" accept="image/*">
+      <button id="remove-image-btn" style="display:none;">Resmi Kaldır</button>
+      <div class="image-container">
+        <img id="uploaded-image" src="" alt="Yüklenen resim yok" style="display:none;">
+      </div>
+    </div>
+
+    <!-- Sonuçlar Kutusu -->
+    <div class="results-box">
+      <h2>Sonuçlar</h2>
+      <button id="show-results-btn" style="display:none;">Sonuçları Göster</button>
+      <div id="results"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
